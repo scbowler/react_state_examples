@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/app.scss';
-import { whatsYourName } from '../helpers';
+import { whatsYourName } from '../helpers'; // Demo helper functions
 import ButtonFc from './button_fc'; // Button Functional Component
 
 const App = () => (
