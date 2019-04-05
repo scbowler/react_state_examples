@@ -3,8 +3,6 @@ import AccordionItem from './accordion_item';
 import './accordion_style.scss'
 
 export default props => {
-    console.log('Accordion Props:', props);
-
     const items = props.content.map((item, index) => {
         return <AccordionItem key={index} title={item.title} content={item.content}/>
     });

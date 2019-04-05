@@ -38,7 +38,7 @@ const App = () => (
     <div className="container">
         <h1 className="center">React Examples</h1>
 
-        {/* <div className="example-container center basic-button-example">
+        <div className="example-container center basic-button-example">
             <h1>Example 1 - Button Functional Component</h1>
             <BasicButton text="Alert!" click={() => alert('The button was clicked')}/>
             <BasicButton backgroundColor="red" text="Are You Sure?" click={() => confirm('Are you sure you want to do this?')}/>
@@ -55,7 +55,7 @@ const App = () => (
             <h1>Example 3 - Modal - Class Component</h1>
 
             <Modal content={modalContent}/>
-        </div> */}
+        </div>
 
         <div className="example-container center accordion-example">
             <h1>Example 4 - Accordion - Class Component</h1>
