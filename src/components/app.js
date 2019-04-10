@@ -1,10 +1,12 @@
 import React from 'react';
 import '../assets/css/app.scss';
-import { whatsYourName } from '../helpers'; // Demo helper functions
-import BasicButton from './basic_button'; // Basic Button - Functional Component
-import ChangingButton from './changing_button'; // Changing color button - Class Component
-import Modal from './modal'; // Modal - Class Component
-import Accordion from './accordion';
+// import { whatsYourName } from '../helpers'; // Demo helper functions
+// import BasicButton from './basic_button'; // Basic Button - Functional Component
+// import ChangingButton from './changing_button'; // Changing color button - Class Component
+// import Modal from './modal'; // Modal - Class Component
+// import Accordion from './accordion';
+import Accordion from './accordion_advanced';
+import AccordionItem from './accordion_advanced/accordion_item';
 
 const modalContent = (
     <div>
@@ -38,7 +40,17 @@ const App = () => (
     <div className="container">
         <h1 className="center">React Examples</h1>
 
-        <div className="example-container center basic-button-example">
+        <div className="example-container center accordion-example">
+            <h1>Example 4 - Accordion - Class Component</h1>
+
+            <Accordion>
+                <AccordionItem title="This is a title">
+                    
+                </AccordionItem>
+            </Accordion>
+        </div>
+
+        {/* <div className="example-container center basic-button-example">
             <h1>Example 1 - Button Functional Component</h1>
             <BasicButton text="Alert!" click={() => alert('The button was clicked')}/>
             <BasicButton backgroundColor="red" text="Are You Sure?" click={() => confirm('Are you sure you want to do this?')}/>
@@ -61,7 +73,7 @@ const App = () => (
             <h1>Example 4 - Accordion - Class Component</h1>
 
             <Accordion content={accordionContent}/>
-        </div>
+        </div> */}
     </div>
 );
 
